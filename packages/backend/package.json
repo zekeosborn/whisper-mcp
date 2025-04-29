@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "rimraf build && tsc && copyfiles --up 2 src/views/**/* build/views",
+    "build": "rimraf build && tsc && cpx \"src/{views,fonts}/**/*\" build",
     "start": "node build/index.js",
     "prisma:dev": "prisma migrate dev",
     "prisma:deploy": "prisma migrate deploy && prisma generate"
@@ -28,7 +28,7 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/node": "^22.15.1",
-    "copyfiles": "^2.4.1",
+    "cpx": "^1.5.0",
     "rimraf": "^6.0.1",
     "typescript": "^5.8.3"
   },

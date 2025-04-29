@@ -1,4 +1,7 @@
-import { createCanvas } from "canvas";
+import { createCanvas, registerFont } from "canvas";
+import path from "path";
+
+registerFont(path.resolve(__dirname, '../../fonts/Inter.ttf'), { family: 'Inter' });
 
 export default function generateImage(
     text: string, 
@@ -20,7 +23,7 @@ export default function generateImage(
     ctx.textBaseline = 'top';
 
     let currentFontSize = 64;
-    ctx.font = `bold ${currentFontSize}px Arial`;
+    ctx.font = `bold ${currentFontSize}px Inter`;
 
     // Wrap text
     const maxLineWidth = width * 0.8;
