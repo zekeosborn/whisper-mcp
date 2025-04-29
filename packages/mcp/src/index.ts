@@ -71,7 +71,7 @@ server.tool(
                 content: [
                     {
                         type: 'text',
-                        text: `Successfully whisper to ${address}. Magic Eden URL: https://magiceden.io/item-details/monad-testnet/${nftContractAddress}/${tokenId}`,
+                        text: `View the whisper (NFT) on Magic Eden: https://magiceden.io/item-details/monad-testnet/${nftContractAddress}/${tokenId}`,
                     },
                 ],
             };
