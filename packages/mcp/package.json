@@ -1,0 +1,21 @@
+{
+  "name": "mcp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "rimraf build && tsc && chmod 755 build/index.js",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "viem": "^2.23.10",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.2"
+  }
+}

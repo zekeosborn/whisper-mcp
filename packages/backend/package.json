@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "rimraf build && tsc && copyfiles --up 2 src/views/**/* build/views",
+    "start": "node build/index.js",
+    "prisma:dev": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy && prisma generate"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.797.0",
+    "@prisma/client": "^6.6.0",
+    "canvas": "^3.1.0",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "prisma": "^6.6.0",
+    "viem": "^2.28.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.1",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  },
+  "prisma": {
+    "schema": "./src/prisma/schema.prisma"
+  }
+}
