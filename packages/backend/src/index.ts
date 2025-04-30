@@ -25,9 +25,9 @@ if (!nftContractAddress) {
 	throw new Error('Missing NFT_CONTRACT_ADDRESS environment variable.');
 }
 
-// View engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.set('trust proxy', 2);
 
 // Middleware
 const rateLimiter = rateLimit({
