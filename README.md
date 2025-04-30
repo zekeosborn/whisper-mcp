@@ -1,5 +1,5 @@
 # Whisper MCP
-An MCP (Model Context Protocol) that allows you to whisper (send message as NFT) to a Monad testnet address.
+An MCP (Model Context Protocol) that allows you to whisper (send message as NFT) to any Monad testnet address.
 
 ![Built on Monad Badge](https://cdn.zekeosborn.xyz/built-on-monad-badge.png)
 
@@ -7,7 +7,7 @@ An MCP (Model Context Protocol) that allows you to whisper (send message as NFT)
 
 | Tool Name    | Description                                               | Prompt Example                                                                                                                                              |
 |--------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `whisper`    | Whisper (send message as NFT) to a Monad testnet address. | `whisper` lovely quotes to `<address>` using purple theme. <br><br> `whisper` "Hey, how's it going?" to `<address>` using purple background and white text. |
+| `whisper`    | Whisper (send message as NFT) to any Monad testnet address. | `whisper` lovely quotes to `<address>` using purple theme. <br><br> `whisper` "Hey, how's it going?" to `<address>` using purple background and white text. |
 
 ## Requirements
 - [Git](https://git-scm.com/downloads)
