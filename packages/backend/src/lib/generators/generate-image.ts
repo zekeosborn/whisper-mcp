@@ -1,7 +1,10 @@
 import { createCanvas, registerFont } from "canvas";
 import path from "path";
 
-registerFont(path.resolve(__dirname, '../../fonts/Inter.ttf'), { family: 'Inter' });
+registerFont(
+    path.resolve(__dirname, '../../fonts/Inter-SemiBold.otf'), 
+    { family: 'InterSemiBold' }
+);
 
 export default function generateImage(
     text: string, 
@@ -23,7 +26,7 @@ export default function generateImage(
     ctx.textBaseline = 'top';
 
     let currentFontSize = 64;
-    ctx.font = `bold ${currentFontSize}px Inter`;
+    ctx.font = `${currentFontSize}px InterSemiBold`;
 
     // Wrap text
     const maxLineWidth = width * 0.8;
