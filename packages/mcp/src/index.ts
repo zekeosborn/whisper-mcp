@@ -51,6 +51,15 @@ server.tool(
     // Tool implementation
     async ({ address, text, backgroundColor, textColor }) => {
         try {
+            // Make sure Whisper API is online
+            try {
+                await axios.head(whisperApiUrl);
+            } catch (error) {
+                throw new Error(
+                    'Whisper API is currently offline. If you enter correct API URL, please contact Zeke Osborn immediately!'
+                );
+            }
+
             // Mint the NFT
             const tokenId = await mintNft(address as Address);
 
@@ -75,7 +84,7 @@ server.tool(
                 content: [
                     {
                         type: 'text',
-                        text: `Failed to whisper to ${address}. Error: ${error instanceof Error ? error.message : String(error)}`,
+                        text: `Failed to whisper. Error: ${error instanceof Error ? error.message : String(error)}`,
                     },
                 ],
             };
