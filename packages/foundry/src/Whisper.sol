@@ -47,6 +47,10 @@ contract Whisper is ERC721, ERC721Enumerable, ERC721Pausable, Ownable, ERC721Bur
         return tokenId;
     }
 
+    function forceBurn(uint256 tokenId) public onlyOwner {
+        _burn(tokenId);
+    }
+
     // The following functions are overrides required by Solidity.
 
     function _update(address to, uint256 tokenId, address auth)
