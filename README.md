@@ -51,7 +51,7 @@ npm run build
       ],
       "env": {
         "WHISPER_API_URL": "https://whisper.zekeosborn.xyz",
-        "NFT_CONTRACT_ADDRESS": "0x9F5975625aC531CFD548AF382f5A079176f02959",
+        "NFT_CONTRACT_ADDRESS": "0x510b63E0436263daE3859c2daFACEDC614f5E857",
         "PRIVATE_KEY": "",
         "RPC_URL": ""
       }
