@@ -1,7 +1,7 @@
 # Whisper MCP
 An MCP (Model Context Protocol) that allows you to whisper (send message as NFT) to any Monad testnet address.
 
-![Built on Monad Badge](https://cdn.zekeosborn.xyz/built-on-monad-badge.png)
+![Built on Monad Badge](https://cdn.osbrn.xyz/built-on-monad-badge.png)
 
 ## Supported Tools
 
